@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-stone-900 bg-[#faf9f6];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Print Styles for 1-Click Resume Generator */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-resume, #printable-resume * {
+    visibility: visible;
+  }
+  #printable-resume {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+/* Smooth Map Pin animation */
+.custom-map-pin {
+  transition: transform 0.2s ease-in-out;
+}
+.custom-map-pin:hover {
+  transform: scale(1.25);
+}

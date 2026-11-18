@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RuralConnect • Local Talent & Small Employer Bridge</title>
+  <meta name="description" content="Connecting rural youth with local employment opportunities and small employers with nearby workers.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= TOP NAVIGATION ================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      
+      <!-- Brand Identity -->
+      <a href="#home" class="brand-logo" aria-label="RuralConnect Home">
+        <span class="brand-icon">🌾</span>
+        <div class="brand-text">
+          <span class="brand-name" data-i18n="brand_name">RuralConnect</span>
+          <span class="brand-sub" data-i18n="brand_sub">Local Employment Bridge</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#jobs" class="nav-link" data-i18n="nav_jobs">Find Jobs</a></li>
+          <li><a href="#post-job" class="nav-link" data-i18n="nav_hire">Hire Workers</a></li>
+          <li><a href="#how-it-works" class="nav-link" data-i18n="nav_how">How It Works</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">About Us</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Menu Button -->
+      <div class="nav-actions">
+        
+        <!-- 3-Language Switcher (English, Kannada, Hindi) -->
+        <div class="lang-switcher" aria-label="Language Selector">
+          <button type="button" class="lang-btn active" data-lang="en" title="English">EN</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="kn" title="ಕನ್ನಡ">ಕನ್ನಡ</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="hi" title="हिंदी">हिंदी</button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+
+    <!-- SECTION A: HOME PAGE (HERO) -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="hero_badge">Local Talent • Right Opportunities</span>
+          </div>
+          
+          <!-- Official Problem Statement Prominently -->
+          <h1 class="hero-title" data-i18n="hero_title">
+            "Rural youth cannot find work that fits, and small employers cannot find them."
+          </h1>
+          
+          <!-- Short Explanation -->
+          <p class="hero-desc" data-i18n="hero_desc">
+            We connect rural talent with local employment opportunities, helping young people find suitable work and small employers discover the workers they need.
+          </p>
+
+          <!-- ONLY TWO MAIN BUTTONS -->
+          <div class="hero-cta-group">
+            <a href="#jobs" class="btn btn-primary" data-i18n="hero_btn_find_job">
+              Find a Job
+            </a>
+            <a href="#post-job" class="btn btn-secondary" data-i18n="hero_btn_hire">
+              Hire Workers
+            </a>
+          </div>
+
+          <!-- Simple Key Audience Highlights -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🧑‍🌾</span>
+              <div>
+                <strong data-i18n="aud_1_title">For Rural Youth</strong>
+                <span data-i18n="aud_1_desc">Discover verified jobs near your village</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🏪</span>
+              <div>
+                <strong data-i18n="aud_2_title">For Small Employers</strong>
+                <span data-i18n="aud_2_desc">Reach skilled local workers in minutes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Relevant Rural Employment Hero Image -->
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img 
+              src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1000&q=80" 
+              alt="Rural technician and agricultural workers in village" 
+              class="hero-img"
+              loading="eager"
+            >
+            <div class="hero-caption-overlay">
+              <span class="caption-tag" data-i18n="hero_tag">Livelihoods in Villages</span>
+              <p data-i18n="hero_caption">Fostering dignity and fair wages within our home communities.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION B: FIND JOBS – FOR RURAL YOUTH -->
+    <section id="jobs" class="section jobs-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="jobs_tag">For Rural Youth</span>
+          <h2 class="section-title" data-i18n="jobs_title">Available Local Jobs</h2>
+          <p class="section-subtitle" data-i18n="jobs_subtitle">
+            Browse verified opportunities from workshops, farms, shops, and small enterprises in nearby taluks.
+          </p>
+        </div>
+
+        <!-- Simple Filter Bar (Location & Job Type) -->
+        <div class="filter-bar">
+          <div class="filter-group">
+            <label for="filterLocation" data-i18n="filter_loc_lbl">Filter by Location:</label>
+            <select id="filterLocation" class="filter-select">
+              <option value="all" data-i18n="filter_all_locations">All Locations</option>
+              <option value="Bantwal">Bantwal, Dakshina Kannada</option>
+              <option value="Shivamogga">Shivamogga</option>
+              <option value="Mandya">Mandya</option>
+              <option value="Belagavi">Belagavi</option>
+              <option value="Udupi">Udupi</option>
+              <option value="Sirsi">Sirsi, Uttara Kannada</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filterType" data-i18n="filter_type_lbl">Filter by Job Type:</label>
+            <select id="filterType" class="filter-select">
+              <option value="all" data-i18n="filter_all_types">All Job Types</option>
+              <option value="Full-time" data-i18n="opt_fulltime">Full-time</option>
+              <option value="Part-time" data-i18n="opt_parttime">Part-time</option>
+              <option value="Daily Wage" data-i18n="opt_dailywage">Daily Wage</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Job Listings Grid -->
+        <div class="jobs-grid" id="jobsContainer">
+          <!-- Populated dynamically via script.js -->
+        </div>
+
+        <!-- Empty Filter State -->
+        <div id="noJobsMsg" class="no-jobs-card hidden">
+          <p data-i18n="no_jobs_found">No jobs match your selected filters. Try choosing "All Locations" or "All Job Types".</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION C: HIRE WORKERS – FOR SMALL EMPLOYERS -->
+    <section id="post-job" class="section post-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="hire_tag">For Small Employers</span>
+          <h2 class="section-title" data-i18n="hire_title">Hire Workers From Nearby Villages</h2>
+          <p class="section-subtitle" data-i18n="hire_subtitle">
+            Post your job opening in 2 minutes. Your vacancy will be immediately visible to local youth.
+          </p>
+        </div>
+
+        <div class="post-job-container">
+          
+          <form id="postJobForm" class="job-form" novalidate>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="empName" data-i18n="form_emp_name">Employer Name <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="empName" 
+                  required 
+                  placeholder="e.g. Venkatesh Prabhu"
+                  data-i18n-ph="ph_emp_name"
+                >
+                <span class="error-msg" data-i18n="err_emp_name">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="bizName" data-i18n="form_biz_name">Business / Farm Name (Optional)</label>
+                <input 
+                  type="text" 
+                  id="bizName" 
+                  placeholder="e.g. Shree Krishna Electrical Works"
+                  data-i18n-ph="ph_biz_name"
+                >
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="jobTitle" data-i18n="form_job_title">Job Title <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="jobTitle" 
+                  required 
+                  placeholder="e.g. Electrical Workshop Assistant"
+                  data-i18n-ph="ph_job_title"
+                >
+                <span class="error-msg" data-i18n="err_job_title">Please enter a job title.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="jobLocation" data-i18n="form_job_loc">Location (Village / Taluk) <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="jobLocation" 
+                  required 
+                  placeholder="e.g. Bantwal, Dakshina Kannada"
+                  data-i18n-ph="ph_job_loc"
+                >
+                <span class="error-msg" data-i18n="err_job_loc">Please enter the job location.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="jobType" data-i18n="form_job_type">Job Type <span class="req">*</span></label>
+                <select id="jobType" required>
+                  <option value="Full-time" data-i18n="opt_fulltime">Full-time</option>
+                  <option value="Part-time" data-i18n="opt_parttime">Part-time</option>
+                  <option value="Daily Wage" data-i18n="opt_dailywage">Daily Wage</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="jobSalary" data-i18n="form_job_salary">Salary or Payment Details <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="jobSalary" 
+                  required 
+                  placeholder="e.g. ₹12,000 / month or ₹450 / day"
+                  data-i18n-ph="ph_job_salary"
+                >
+                <span class="error-msg" data-i18n="err_job_salary">Please specify the payment or wage.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="jobSkills" data-i18n="form_job_skills">Required Skills (Comma separated) <span class="req">*</span></label>
+              <input 
+                type="text" 
+                id="jobSkills" 
+                required 
+                placeholder="e.g. Wiring, Household Appliance Repair, Tool Handling"
+                data-i18n-ph="ph_job_skills"
+              >
+              <span class="error-msg" data-i18n="err_job_skills">Please enter the required skills.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="jobContact" data-i18n="form_job_contact">Contact Phone Number or Email <span class="req">*</span></label>
+              <input 
+                type="text" 
+                id="jobContact" 
+                required 
+                placeholder="e.g. 9845012345 or contact@example.com"
+                data-i18n-ph="ph_job_contact"
+              >
+              <span class="error-msg" data-i18n="err_job_contact">Please provide a valid 10-digit phone number or email for workers to reach you.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="jobDesc" data-i18n="form_job_desc">Job Description <span class="req">*</span></label>
+              <textarea 
+                id="jobDesc" 
+                rows="3" 
+                required 
+                placeholder="Briefly describe what the worker will do and any working hour details..."
+                data-i18n-ph="ph_job_desc"
+              ></textarea>
+              <span class="error-msg" data-i18n="err_job_desc">Please write a brief description of the job.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-post" id="postBtn">
+              <span data-i18n="btn_post_job">Post Job Opportunity</span>
+            </button>
+
+            <!-- Working LocalStorage Confirmation Notice -->
+            <div id="postFeedback" class="form-feedback hidden" role="status" aria-live="polite">
+              <!-- Injected via script.js -->
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION D: HOW IT WORKS -->
+    <section id="how-it-works" class="section how-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="how_tag">Simple Process</span>
+          <h2 class="section-title" data-i18n="how_title">How RuralConnect Works</h2>
+          <p class="section-subtitle" data-i18n="how_subtitle">
+            A straightforward process designed for simplicity with no middle-agents and zero application fees.
+          </p>
+        </div>
+
+        <div class="how-grid">
+          
+          <!-- Column 1: For Job Seekers -->
+          <div class="how-col">
+            <div class="how-col-header">
+              <span class="how-icon">🧑‍🌾</span>
+              <h3 data-i18n="how_youth_title">For Job Seekers (Rural Youth)</h3>
+            </div>
+            
+            <ol class="steps-list">
+              <li class="step-item">
+                <span class="step-num">1</span>
+                <div>
+                  <h4 data-i18n="step_y1_title">Explore local jobs</h4>
+                  <p data-i18n="step_y1_desc">Browse vacancies near your village or taluk by location and job type.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <span class="step-num">2</span>
+                <div>
+                  <h4 data-i18n="step_y2_title">Find work matching your skills</h4>
+                  <p data-i18n="step_y2_desc">Check the required practical skills like wiring, driving, farming, or store handling.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <span class="step-num">3</span>
+                <div>
+                  <h4 data-i18n="step_y3_title">Contact the employer directly</h4>
+                  <p data-i18n="step_y3_desc">Click "Contact Employer" to view their phone number and call immediately.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Column 2: For Small Employers -->
+          <div class="how-col">
+            <div class="how-col-header">
+              <span class="how-icon">🏪</span>
+              <h3 data-i18n="how_emp_title">For Small Employers (Local MSMEs)</h3>
+            </div>
+            
+            <ol class="steps-list">
+              <li class="step-item">
+                <span class="step-num">1</span>
+                <div>
+                  <h4 data-i18n="step_e1_title">Share your job requirement</h4>
+                  <p data-i18n="step_e1_desc">Fill out the simple job posting form with salary, location, and required skills.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <span class="step-num">2</span>
+                <div>
+                  <h4 data-i18n="step_e2_title">Reach nearby rural talent</h4>
+                  <p data-i18n="step_e2_desc">Your listing becomes instantly visible to youth looking for work in your area.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <span class="step-num">3</span>
+                <div>
+                  <h4 data-i18n="step_e3_title">Find suitable workers</h4>
+                  <p data-i18n="step_e3_desc">Speak with interested applicants directly and hire capable local hands quickly.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION E: ABOUT US -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="about_tag">Our Purpose</span>
+          <h2 class="section-title" data-i18n="about_title">Bridging the Rural Employment Divide</h2>
+          <p class="section-subtitle" data-i18n="about_subtitle">
+            Why we created RuralConnect and how it benefits village communities.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-card">
+            <span class="about-card-icon">⚠️</span>
+            <h3 data-i18n="ab_1_title">The Rural Employment Problem</h3>
+            <p data-i18n="ab_1_desc">
+              In most rural areas, young people are forced to leave their homes for faraway cities because they don't know who is hiring nearby. At the same time, local workshop owners, farmers, and retailers struggle for weeks to find reliable workers.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <span class="about-card-icon">💡</span>
+            <h3 data-i18n="ab_2_title">Why This Platform Exists</h3>
+            <p data-i18n="ab_2_desc">
+              Traditional job portals are built for urban college graduates with English resumes. RuralConnect was created to be simple, accessible, and practical—valuing hands-on craftsmanship and direct local connections without resumes or fees.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <span class="about-card-icon">🤝</span>
+            <h3 data-i18n="ab_3_title">How It Helps Both Groups</h3>
+            <p data-i18n="ab_3_desc">
+              Rural youth find dignified livelihood opportunities near their families, reducing distress migration. Small businesses fill urgent vacancies quickly with trustworthy neighbors, strengthening the local rural economy.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION F: CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag" data-i18n="contact_tag">Assistance</span>
+          <h2 class="section-title" data-i18n="contact_title">Contact RuralConnect</h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">
+            Need help posting a job or finding work? Reach out to our community support desk.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info -->
+          <div class="contact-info-card">
+            <h3 data-i18n="c_info_title">Community Helpdesk</h3>
+            <p class="contact-desc" data-i18n="c_info_desc">
+              We assist village youth and small business owners with publishing opportunities and answering questions.
+            </p>
+
+            <ul class="contact-details">
+              <li>
+                <span class="detail-icon">📍</span>
+                <div>
+                  <strong data-i18n="c_loc_lbl">Community Center</strong>
+                  <span data-i18n="c_loc_val">Gram Panchayat Complex, Bantwal Taluk, Karnataka 574211</span>
+                </div>
+              </li>
+              <li>
+                <span class="detail-icon">📞</span>
+                <div>
+                  <strong data-i18n="c_phone_lbl">Helpline Number</strong>
+                  <span>+91 98450 12345</span>
+                </div>
+              </li>
+              <li>
+                <span class="detail-icon">✉️</span>
+                <div>
+                  <strong data-i18n="c_mail_lbl">Email Address</strong>
+                  <span>support@ruralconnect.org</span>
+                </div>
+              </li>
+              <li>
+                <span class="detail-icon">🕒</span>
+                <div>
+                  <strong data-i18n="c_hours_lbl">Support Hours</strong>
+                  <span data-i18n="c_hours_val">Monday to Saturday: 9:00 AM – 5:00 PM</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="free-notice">
+              <span class="notice-icon">🛡️</span>
+              <p data-i18n="free_guarantee">
+                <strong>100% Free Service:</strong> RuralConnect never charges fees to job seekers or small employers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3 data-i18n="c_form_title">Send Us a Question</h3>
+            
+            <form id="contactHelpForm" class="help-form" novalidate>
+              
+              <div class="form-group">
+                <label for="cName" data-i18n="c_form_name">Your Name <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="cName" 
+                  required 
+                  placeholder="e.g. Praveen Kumar"
+                  data-i18n-ph="ph_c_name"
+                >
+                <span class="error-msg" data-i18n="err_c_name">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="cContact" data-i18n="c_form_phone">Phone Number or Email <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="cContact" 
+                  required 
+                  placeholder="e.g. 9845012345"
+                  data-i18n-ph="ph_c_phone"
+                >
+                <span class="error-msg" data-i18n="err_c_phone">Please enter a valid phone number or email.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="cMessage" data-i18n="c_form_msg">Your Question or Inquiry <span class="req">*</span></label>
+                <textarea 
+                  id="cMessage" 
+                  rows="3" 
+                  required 
+                  placeholder="Tell us what help you need..."
+                  data-i18n-ph="ph_c_msg"
+                ></textarea>
+                <span class="error-msg" data-i18n="err_c_msg">Please write your message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="cSubmitBtn">
+                <span data-i18n="btn_send_inquiry">Send Inquiry</span>
+              </button>
+
+              <div id="contactFeedback" class="form-feedback hidden" role="status" aria-live="polite">
+                <!-- Injected via script.js -->
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= DIRECT CONTACT EMPLOYER MODAL ================= -->
+  <div id="contactModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modalJobTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag" data-i18n="modal_badge">Direct Employer Contact</span>
+          <h3 id="modalJobTitle" class="modal-title">Job Title</h3>
+          <p id="modalBizName" class="modal-sub">Employer Name</p>
+        </div>
+        <button id="closeModalBtn" class="close-btn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-info-box">
+          <div class="info-row">
+            <span class="info-lbl" data-i18n="m_loc_lbl">Location:</span>
+            <strong id="modalLocation">Location</strong>
+          </div>
+          <div class="info-row">
+            <span class="info-lbl" data-i18n="m_pay_lbl">Payment / Wage:</span>
+            <strong id="modalSalary" class="highlight-text">₹0</strong>
+          </div>
+          <div class="info-row">
+            <span class="info-lbl" data-i18n="m_type_lbl">Type:</span>
+            <span id="modalType" class="badge">Type</span>
+          </div>
+        </div>
+
+        <div class="contact-callout">
+          <p class="callout-prompt" data-i18n="modal_call_prompt">
+            Call or message this employer directly to discuss this opportunity:
+          </p>
+          <div class="phone-display" id="modalPhoneBox">
+            <span class="phone-icon">📞</span>
+            <span id="modalPhone" class="phone-number">+91 98450 12345</span>
+          </div>
+          <p class="callout-note" data-i18n="modal_note">
+            No resume needed. Mention your practical skills and availability when calling.
+          </p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="modalDoneBtn" class="btn btn-primary" data-i18n="btn_close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand">
+        <span class="footer-logo">🌾 RuralConnect</span>
+        <p data-i18n="footer_tagline">
+          Connecting rural youth with local employment opportunities and small employers with nearby workers.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home" data-i18n="nav_home">Home</a>
+        <a href="#jobs" data-i18n="nav_jobs">Find Jobs</a>
+        <a href="#post-job" data-i18n="nav_hire">Hire Workers</a>
+        <a href="#how-it-works" data-i18n="nav_how">How It Works</a>
+        <a href="#about" data-i18n="nav_about">About Us</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">
+          © 2026 RuralConnect Platform • Solving rural employment with simplicity and dignity.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
